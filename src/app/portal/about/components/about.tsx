@@ -71,12 +71,12 @@ export function About() {
             Your Notes
           </h2>
 
-          <div className="h-[950px] overflow-y-auto px-2 scroll-m-1">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="h-auto overflow-y-auto px-2 scroll-m-1">
+            <div className="grid grid-cols-1 w-auto  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {state.notes.map((note, index) => (
                 <div
                   key={index}
-                  className="p-5 w-[400px] rounded-xl bg-white h-96 shadow-lg border border-gray-200 transition transform hover:scale-105 hover:shadow-xl relative group"
+                  className="p-5 w-auto rounded-xl bg-white h-28 shadow-lg border border-gray-200 transition transform hover:scale-105 hover:shadow-xl relative group"
                 >
                   <h3 className="text-lg font-semibold text-gray-900">
                     {note.title}
