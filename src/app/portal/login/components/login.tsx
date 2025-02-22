@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import useSignUp from "../LoginService/useSinup";
 import Signup from "./singup";
-import withAuth from "../../route/withAuth";
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({
@@ -106,4 +105,4 @@ const LoginPage = () => {
     </div>
   );
 };
-export default withAuth(LoginPage);
+export default LoginPage;
