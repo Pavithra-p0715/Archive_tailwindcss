@@ -78,7 +78,7 @@ const About = () => {
 
               <div
                 className="px-2 scroll-m-6"
-                style={{ maxHeight: "calc(100vh - 180px)", overflowY: "auto" }}
+                style={{ maxHeight: "calc(90vh - 180px)", overflowY: "auto" }}
               >
                 <div className="grid grid-cols-1 w-auto  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                   {state.notes.map((note, index) => (
