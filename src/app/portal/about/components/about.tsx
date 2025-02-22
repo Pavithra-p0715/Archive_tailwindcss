@@ -8,8 +8,9 @@ import Notes from "./notes";
 import { FaPenFancy, FaRegUser } from "react-icons/fa";
 import { MdWavingHand } from "react-icons/md";
 import { BiNotepad } from "react-icons/bi";
+import withAuth from "../../route/withAuth";
 
-export function About() {
+const About = () => {
   const [state, setState] = useState<State>({
     notes: [],
     open: false,
@@ -132,6 +133,6 @@ export function About() {
       </div>
     </div>
   );
-}
+};
 
-export default About;
+export default withAuth(About);

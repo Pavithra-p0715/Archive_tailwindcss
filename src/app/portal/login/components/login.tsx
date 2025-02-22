@@ -1,17 +1,18 @@
 "use client";
 
-import {  useState } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import useSignUp from "../LoginService/useSinup";
 import Signup from "./singup";
+import withAuth from "../../route/withAuth";
 
-export default function LoginPage() {
-const [formData, setFormData] = useState({
-  fullName: "",
-  email: "",
-  password: "",
-  confirmPassword: "",
-});
+const LoginPage = () => {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [message, setMessage] = useState<string>("");
@@ -104,4 +105,5 @@ const [formData, setFormData] = useState({
       </div>
     </div>
   );
-}
+};
+export default withAuth(LoginPage);
