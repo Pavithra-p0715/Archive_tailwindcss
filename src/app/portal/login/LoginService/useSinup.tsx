@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 
 const useSignUp = () => {
-  const router = useRouter();
+
   const handleRegister = (
     event: React.FormEvent,
     values: {
