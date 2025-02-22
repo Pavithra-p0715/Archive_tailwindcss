@@ -28,9 +28,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased  bg-[linear-gradient(to_bottom_right,#fde5d2,#fee8f1,#fff9e6,#e3f2ff,#e8dfff)] min-h-screen `}
       >
-        <div className="sticky">
-          <Header />
-        </div>
+        <Header />
+
         {children}
       </body>
     </html>

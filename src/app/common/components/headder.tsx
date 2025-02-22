@@ -60,7 +60,7 @@ const Header: React.FC<IHeaderProps> = ({ title = "Keep Notes" }) => {
 
   return (
     <>
-      <div className="flex justify-between items-center p-4  shadow-md  bg-purple-200">
+      <div className="flex justify-between w-full p-4  fixed z-40 shadow-md  bg-purple-200">
         <button className="md:hidden" onClick={() => setDrawerOpen(true)}>
           <FaBars className="text-2xl" />
         </button>
